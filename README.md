@@ -16,6 +16,6 @@ kurso-zagreba-metodo web app is packaged as Android app
   - [dialogs](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-dialogs/)
   - [httpd](https://github.com/floatinghotpot/cordova-httpd)
 
-# Dowload 
+# Download 
 - [Google Play Store](https://play.google.com/store/apps/details?id=com.esperanto.learn)
 - [APK](https://github.com/Esperanto/kurso-zagreba-metodo-android/releases/download/1.0.3/android-release-signed.apk)
