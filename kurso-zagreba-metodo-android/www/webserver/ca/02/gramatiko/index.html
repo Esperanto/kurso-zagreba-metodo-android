@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+	2. La amikino de Marko
+	|
+	Gramàtica
+	|
+  L'esperanto en  12 dies
+		</title>
+
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/ca/../assets/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">  
+    <!--
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    -->
+    <link href="/ca/../assets/css/main.css" rel="stylesheet">
+    <link href="/ca/../assets/css/vortaro.css" rel="stylesheet">
+
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-75833502-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/ca/"><img id="logo" src="/ca/../assets/img/stelo.png" alt="Verda stelo"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Lliçons
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/ca/01">1. Amiko Marko</a></li>
+                <li><a href="/ca/02">2. La amikino de Marko</a></li>
+                <li><a href="/ca/03">3. En kafejo</a></li>
+                <li><a href="/ca/04">4. Miaj leteroj</a></li>
+                <li><a href="/ca/05">5. Nova aŭto</a></li>
+                <li><a href="/ca/06">6. Maja</a></li>
+                <li><a href="/ca/07">7. Ĉiam malfrue</a></li>
+                <li><a href="/ca/08">8. Malbela tago</a></li>
+                <li><a href="/ca/09">9. Planoj pri veturado</a></li>
+                <li><a href="/ca/10">10. Familianoj kunvenas</a></li>
+                <li><a href="/ca/11">11. La sentimulo</a></li>
+                <li><a href="/ca/12">12. Nokta promeno</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Apèndix
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/ca/tabelvortoj">
+                  Correlatius
+                </a></li>
+                <li><a href="/ca/prepozicioj">
+                  Preposicions
+                </a></li>
+                <li><a href="/ca/konjunkcioj">
+                  Conjuncions
+                </a></li>
+                <li><a href="/ca/afiksoj">
+                  Afixos
+                </a></li>
+                <li><a href="/ca/diversajxoj">
+                  Miscelània
+                </a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-left">
+  <input id="vortaro" class="typeahead form-control" type="text" placeholder="Diccionari">          </form>
+
+          <form class="navbar-form navbar-left">
+            <select id="lingvoelektilo" class="form-control">
+                <option value="ca"
+  
+                  selected
+  
+                >Català</option>
+                <option value="de"
+  
+                >Deutsch</option>
+                <option value="en"
+  
+                >English</option>
+                <option value="fr"
+  
+                >Français</option>
+                <option value="es"
+  
+                >Español</option>
+                <option value="ms"
+  
+                >Bahasa Melayu</option>
+                <option value="pt"
+  
+                >Português</option>
+                <option value="th"
+  
+                >ภาษาไทย</option>
+                <option value="tr"
+  
+                >Türkçe (beta)</option>
+                <option value="uk"
+  
+                >Українська</option>
+                <option value="zh"
+  
+                >中文</option>
+                <option value="ar"
+  
+                >(test: araba)</option>
+                <option value="cs"
+  
+                >(test: ĉeĥa)</option>
+                <option value="fa"
+  
+                >(test: persa)</option>
+                <option value="frp"
+  
+                >(test: arpitana)</option>
+                <option value="hr"
+  
+                >(test: kroata)</option>
+                <option value="id"
+  
+                >(test: indonezia)</option>
+                <option value="km"
+  
+                >(test: kmera)</option>
+                <option value="nl"
+  
+                >(test: nederlanda)</option>
+                <option value="ru"
+  
+                >(test: rusa)</option>
+                <option value="sv"
+  
+                >(test: sveda)</option>
+                <option value="ur"
+  
+                >(test: urdua)</option>
+                <option value="my"
+  
+                >(test: birma)</option>
+                <option value="lo"
+  
+                >(test: laosa)</option>
+                <option value="hu"
+  
+                >(test: hungara)</option>
+            </select>
+          </form>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>   
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12">
+          
+
+<ul class="pager">
+<li class="previous"><a href="/ca/02/vortoj/">endarrere</a></li> 
+<li class="next"><a href="/ca/02/ekzerco1/">endavant</a></li> 
+</ul>
+  <h2 id="leciono2">
+    2.
+<a href="javascript:" data-toggle="popover" title="
+ 
+el/la, els/les  " data-content="
+    <table>
+ 
+    </table>
+  "
+  >La</a> 
+<a href="javascript:" data-toggle="popover" title="
+ 
+amiga  " data-content="
+    <table>
+<tr>
+          <td><em>amik</em></td>
+          <td>
+ 
+amic          </td>
+        </tr><tr>
+          <td><em>in</em></td>
+          <td>
+ 
+femení          </td>
+        </tr><tr>
+          <td><em>o</em></td>
+          <td>
+ 
+substantiu          </td>
+        </tr> 
+    </table>
+  "
+  >amikino</a> 
+<a href="javascript:" data-toggle="popover" title="
+ 
+de, des de  " data-content="
+    <table>
+ 
+    </table>
+  "
+  >de</a> 
+<a href="javascript:" data-toggle="popover" title="
+ 
+Marc  " data-content="
+    <table>
+ 
+    </table>
+  "
+  >Marko</a>  </h2>
+
+<ul class="nav nav-tabs">
+    <li 
+      role="presentation"
+    >
+    <a href="/ca/02/">Text</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/ca/02/vortoj/">Paraules noves</a>
+    </li>
+    <li 
+ 
+        class="active"
+      role="presentation"
+    >
+    <a href="/ca/02/gramatiko/">Gramàtica</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/ca/02/ekzerco1/">Exercici 1</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/ca/02/ekzerco2/">Exercici 2</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/ca/02/ekzerco3/">Exercici 3</a>
+    </li>
+</ul>
+  <h3>Adjectius</h3>
+<p>Els adjectius acaben en <em><strong>-A</strong></em>.</p>
+<ul>
+<li><em>bel<strong>a</strong></em> – bell/a, bonic/a</li>
+<li><em>grand<strong>a</strong></em> – gran</li>
+</ul>
+<h3>Declinació</h3>
+<p>Només hi ha dos casos: nominatiu i acusatiu. Aquest últim es forma afegint <strong>-N</strong> al nominatiu. Aquesta terminació indica el complement o objecte directe en substantius, adjectius i pronoms.</p>
+<p><strong>Nominatiu:</strong></p>
+<ul>
+<li><em>Vi estas bon<strong>a</strong> amik<strong>o</strong></em> – Tu ets un bon amic</li>
+<li><em>Vi estas bon<strong>aj</strong> amik<strong>oj</strong></em> – Vosaltres sou bons amics</li>
+</ul>
+<p><strong>Acusatiu:</strong></p>
+<ul>
+<li><em>Vi havas bon<strong>an</strong> amik<strong>on</strong></em> – Tens un bon amic</li>
+<li><em>Vi havas bon<strong>ajn</strong> amik<strong>ojn</strong></em> – Tens bons amics</li>
+</ul>
+<p>Els altres casos es formen amb preposicions. El genitiu amb <strong>de</strong> ("de"), el datiu amb <strong>al</strong> ("a"), l'ablatiu amb <strong>kun</strong> ("amb") o amb altres preposicions, segons el sentit:</p>
+<ul>
+<li>Mi iras <strong>kun</strong> vi - Vaig amb tu</li>
+<li>Mi iras <strong>al</strong> vi - Vaig cap a tu</li>
+<li>La teksto <strong>de</strong> la libro estas bona - El text del llibre és bo</li>
+</ul>
+<h3>Conjugació</h3>
+<h4>Infinitiu: <em>-I</em></h4>
+<ul>
+<li><em>labor<strong>i</strong></em>          – Treballar</li>
+<li><em>manĝ<strong>i</strong></em>           – Menjar</li>
+</ul>
+<h4>Passat: <em>-IS</em></h4>
+<ul>
+<li><em>mi hav<strong>is</strong></em>        – Jo tenia/vaig tenir</li>
+<li><em>vi hav<strong>is</strong></em>        – Tu tenies/vas tenir, vosaltres tenieu/vau tenir</li>
+<li><em>li/ŝi/ĝi hav<strong>is</strong></em>  – Ell/Ella/"la cosa, l'animal" tenia/va tenir</li>
+<li><em>mi manĝ<strong>is</strong></em>       – Jo menjava/vaig menjar</li>
+</ul>
+<h4>Futur: <em>-OS</em></h4>
+<ul>
+<li><em>mi manĝ<strong>os</strong></em>      – Jo menjaré</li>
+<li><em>li manĝ<strong>os</strong></em>      – Ell menjarà</li>
+<li><em>ili manĝ<strong>os</strong></em>     – Ells/Elles menjaran</li>
+</ul>
+<h3>Conjunció <em>ke</em></h3>
+<p>En català la paraula "que" té diversos sentits. La conjunció copulativa "que" és en esperanto <strong>KE</strong>:</p>
+<ul>
+<li>Vi vidas <strong>ke</strong> mi manĝas - (Tu) veus que (jo) menjo</li>
+<li>Mi diras <strong>ke</strong> ŝi venos = (Jo) dic que ella vindrà</li>
+<li>S'acostuma a utilitzar de forma indirecta, amb verbs com: dir, creure, opinar, veure, voler, obligar a que, etc.</li>
+</ul>
+<h3>Prefix <em>mal-</em></h3>
+<p>Indica la idea contrària o oposada a l'expressada per l'arrel:</p>
+<ul>
+<li><em>bona</em> – bo/bona<ul>
+<li><em><strong>mal</strong>bona</em> – dolent/a</li>
+</ul>
+</li>
+<li><em>granda</em> – gran<ul>
+<li><em><strong>mal</strong>granda</em> – petit/a</li>
+</ul>
+</li>
+<li><em>bela</em> – bonic/a, bell/a<ul>
+<li><em><strong>mal</strong>bela</em> – lleig/lletja</li>
+</ul>
+</li>
+</ul>
+<h3>Prefix <em>ge-</em></h3>
+<p>Indica la presència dels dos sexes:</p>
+<ul>
+<li><em><strong>ge</strong>amikoj</em> – amics i amigues</li>
+<li><em><strong>ge</strong>patroj</em> – pares (= pare i mare, pares i mares)</li>
+</ul>
+<h3>Expressions de gentilesa</h3>
+<ul>
+<li><em><strong>bonvolu</strong></em> – Si us plau</li>
+<li><em><strong>dankon</strong></em> – Gràcies</li>
+<li><em><strong>saluton</strong></em> – Hola</li>
+</ul>
+<h3>Ordre de les paraules</h3>
+<p>És lliure, gràcies a l'acusatiu:</p>
+<ul>
+<li><em>Li amas ŝin</em> – Ell l'estima (a ella)</li>
+<li><em>Ŝin amas li</em> – (a ella) Ell l'estima </li>
+</ul>
+<h3>Què</h3>
+<p>"Què", amb el significat de "quina cosa", es tradueix:</p>
+<ol>
+<li>KIO<ul>
+<li>Kio estas sur la tablo? La libro estas sur la tablo (¿Què hi ha sobre la taula? = ¿Quina cosa...?)</li>
+</ul>
+</li>
+<li>KION<ul>
+<li>Kio<strong>n</strong> vi vidas? (¿Què veus?)</li>
+<li>Homo<strong>n</strong> mi vidas - Veig un home o dona, una persona</li>
+<li>En aquest cas porta <strong>-N</strong> d'acusatiu, per ser objecte directe.</li>
+</ul>
+</li>
+</ol>
+<p>Mai s'utilitza davant d'un nom:</p>
+<p>Correcte: Kiu homo ŝi estas?; kiun belan kukon ŝi manĝas?</p>
+<p>Incorrecte: Kio homo...; kion belan kukon...</p>
+ 
+
+<ul class="pager">
+<li class="previous"><a href="/ca/02/vortoj/">endarrere</a></li> 
+<li class="next"><a href="/ca/02/ekzerco1/">endavant</a></li> 
+</ul>
+        
+        </div>
+      </div>
+
+			<div class="footer well well-sm">
+				<div>
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo#permesiloj">
+				    <img id="cc" src="/ca/../assets/img/cc.png" alt="Creative commons">
+					</a> 
+					
+					Surbaze de la <a href="https://eo.wikipedia.org/wiki/Zagreba_metodo">Zagreba metodo</a>, 
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo/blob/master/AUTHORS.md">Aŭtoroj</a>,
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo/tree/master/enhavo/tradukenda">Aldonu lingvon</a>,
+					<a href="mailto:georg@jaehnig.org">Kontakto</a>
+			</div>
+
+    </div>
+
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/ca/../assets/libs/jquery.min.js"></script>
+    <script src="/ca/../assets/libs/jquery-ui.min.js"></script>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/ca/../assets/libs/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Typeahead for Vortaro -->
+    <script src="/ca/../assets/libs/typeahead.bundle.min.js"></script>
+
+    <script>if (window.module) module = window.module;</script> 
+
+    <script src="/ca/../assets/js/main.js"></script>
+    <script src="/ca/js/vortlisto.js"></script>
+    <script src="/ca/../assets/js/vortaro.js"></script>
+
+  </body>
+</html>

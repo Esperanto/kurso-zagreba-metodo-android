@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "com.rjfun.cordova.httpd": {
+            "PACKAGE_NAME": "com.esperanto.learn"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.esperanto.learn"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.esperanto.learn"
+        }
+    },
+    "dependent_plugins": {}
+}

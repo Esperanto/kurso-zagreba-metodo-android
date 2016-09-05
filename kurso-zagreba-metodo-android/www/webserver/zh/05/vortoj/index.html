@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+	5. Nova aŭto
+	|
+	生词
+	|
+  12天世界语课
+		</title>
+
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/zh/../assets/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">  
+    <!--
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    -->
+    <link href="/zh/../assets/css/main.css" rel="stylesheet">
+    <link href="/zh/../assets/css/vortaro.css" rel="stylesheet">
+
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-75833502-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/zh/"><img id="logo" src="/zh/../assets/img/stelo.png" alt="Verda stelo"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                课程
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/zh/01">1. Amiko Marko</a></li>
+                <li><a href="/zh/02">2. La amikino de Marko</a></li>
+                <li><a href="/zh/03">3. En kafejo</a></li>
+                <li><a href="/zh/04">4. Miaj leteroj</a></li>
+                <li><a href="/zh/05">5. Nova aŭto</a></li>
+                <li><a href="/zh/06">6. Maja</a></li>
+                <li><a href="/zh/07">7. Ĉiam malfrue</a></li>
+                <li><a href="/zh/08">8. Malbela tago</a></li>
+                <li><a href="/zh/09">9. Planoj pri veturado</a></li>
+                <li><a href="/zh/10">10. Familianoj kunvenas</a></li>
+                <li><a href="/zh/11">11. La sentimulo</a></li>
+                <li><a href="/zh/12">12. Nokta promeno</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                附录
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/zh/tabelvortoj">
+                  词表词
+                </a></li>
+                <li><a href="/zh/prepozicioj">
+                  介词
+                </a></li>
+                <li><a href="/zh/konjunkcioj">
+                  连接词
+                </a></li>
+                <li><a href="/zh/afiksoj">
+                  辍词
+                </a></li>
+                <li><a href="/zh/diversajxoj">
+                  不同事物
+                </a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-left">
+  <input id="vortaro" class="typeahead form-control" type="text" placeholder="字典">          </form>
+
+          <form class="navbar-form navbar-left">
+            <select id="lingvoelektilo" class="form-control">
+                <option value="ca"
+  
+                >Català</option>
+                <option value="de"
+  
+                >Deutsch</option>
+                <option value="en"
+  
+                >English</option>
+                <option value="fr"
+  
+                >Français</option>
+                <option value="es"
+  
+                >Español</option>
+                <option value="ms"
+  
+                >Bahasa Melayu</option>
+                <option value="pt"
+  
+                >Português</option>
+                <option value="th"
+  
+                >ภาษาไทย</option>
+                <option value="tr"
+  
+                >Türkçe (beta)</option>
+                <option value="uk"
+  
+                >Українська</option>
+                <option value="zh"
+  
+                  selected
+  
+                >中文</option>
+                <option value="ar"
+  
+                >(test: araba)</option>
+                <option value="cs"
+  
+                >(test: ĉeĥa)</option>
+                <option value="fa"
+  
+                >(test: persa)</option>
+                <option value="frp"
+  
+                >(test: arpitana)</option>
+                <option value="hr"
+  
+                >(test: kroata)</option>
+                <option value="id"
+  
+                >(test: indonezia)</option>
+                <option value="km"
+  
+                >(test: kmera)</option>
+                <option value="nl"
+  
+                >(test: nederlanda)</option>
+                <option value="ru"
+  
+                >(test: rusa)</option>
+                <option value="sv"
+  
+                >(test: sveda)</option>
+                <option value="ur"
+  
+                >(test: urdua)</option>
+                <option value="my"
+  
+                >(test: birma)</option>
+                <option value="lo"
+  
+                >(test: laosa)</option>
+                <option value="hu"
+  
+                >(test: hungara)</option>
+            </select>
+          </form>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>   
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12">
+          
+
+<ul class="pager">
+<li class="previous"><a href="/zh/05/">返回</a></li> 
+<li class="next"><a href="/zh/05/gramatiko/">继续</a></li> 
+</ul>
+  <h2 id="leciono5">
+    5.
+<a href="javascript:" data-toggle="popover" title="
+ 
+  " data-content="
+    <table>
+<tr>
+          <td><em>Nov</em></td>
+          <td>
+ 
+新,词根          </td>
+        </tr><tr>
+          <td><em>a</em></td>
+          <td>
+ 
+形容词          </td>
+        </tr> 
+    </table>
+  "
+  >Nova</a> 
+<a href="javascript:" data-toggle="popover" title="
+ 
+  " data-content="
+    <table>
+<tr>
+          <td><em>aŭt</em></td>
+          <td>
+ 
+汽车,词根          </td>
+        </tr><tr>
+          <td><em>o</em></td>
+          <td>
+ 
+名词          </td>
+        </tr> 
+    </table>
+  "
+  >aŭto</a>  </h2>
+
+<ul class="nav nav-tabs">
+    <li 
+      role="presentation"
+    >
+    <a href="/zh/05/">课文</a>
+    </li>
+    <li 
+ 
+        class="active"
+      role="presentation"
+    >
+    <a href="/zh/05/vortoj/">生词</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/zh/05/gramatiko/">语法</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/zh/05/ekzerco1/">练习 1</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/zh/05/ekzerco2/">练习 2</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/zh/05/ekzerco3/">练习 3</a>
+    </li>
+</ul>
+	<ul>
+<li>
+					<em>sinjor</em> 
+ 
+				– 
+绅士,词根, 先生,词根			</li>
+<li>
+					<em>vend</em> 
+ 
+				– 
+卖,词根			</li>
+<li>
+					<em>aŭt</em> 
+ 
+				– 
+汽车,词根			</li>
+<li>
+					<em>kiu</em> 
+ 
+				– 
+谁			</li>
+<li>
+					<em>plaĉ</em> 
+ 
+				– 
+令人愉快,词根			</li>
+<li>
+					<em>demand</em> 
+ 
+				– 
+发问,词根			</li>
+<li>
+					<em>plej</em> 
+ 
+				– 
+最			</li>
+<li>
+					<em>tiu</em> 
+ 
+				– 
+那个人			</li>
+<li>
+					<em>ĉi</em> 
+ 
+				– 
+这			</li>
+<li>
+					<em>ĉiu</em> 
+ 
+				– 
+每个人, 每个			</li>
+<li>
+					<em>pli</em> 
+ 
+				– 
+多于			</li>
+<li>
+					<em>ol</em> 
+ 
+				– 
+多于			</li>
+<li>
+					<em>tre</em> 
+ 
+				– 
+非常			</li>
+<li>
+					<em>cert</em> 
+ 
+				– 
+确定,词根			</li>
+<li>
+					<em>kost</em> 
+ 
+				– 
+价格,词根			</li>
+<li>
+					<em>bedaŭr</em> 
+ 
+				– 
+遗憾,词根			</li>
+<li>
+					<em>ind</em> 
+ 
+				– 
+有价值			</li>
+<li>
+					<em>aĉet</em> 
+ 
+				– 
+买,词根			</li>
+<li>
+					<em>ĉar</em> 
+ 
+				– 
+因为			</li>
+<li>
+					<em>vetur</em> 
+ 
+				– 
+乘行、行,词根			</li>
+<li>
+					<em>dum</em> 
+ 
+				– 
+期间			</li>
+<li>
+					<em>tio</em> 
+ 
+				– 
+那个东西			</li>
+<li>
+					<em>edz</em> 
+ 
+				– 
+丈夫,词根			</li>
+	</ul>
+	
+<ul class="pager">
+<li class="previous"><a href="/zh/05/">返回</a></li> 
+<li class="next"><a href="/zh/05/gramatiko/">继续</a></li> 
+</ul>
+        
+        </div>
+      </div>
+
+			<div class="footer well well-sm">
+				<div>
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo#permesiloj">
+				    <img id="cc" src="/zh/../assets/img/cc.png" alt="Creative commons">
+					</a> 
+					
+					Surbaze de la <a href="https://eo.wikipedia.org/wiki/Zagreba_metodo">Zagreba metodo</a>, 
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo/blob/master/AUTHORS.md">Aŭtoroj</a>,
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo/tree/master/enhavo/tradukenda">Aldonu lingvon</a>,
+					<a href="mailto:georg@jaehnig.org">Kontakto</a>
+			</div>
+
+    </div>
+
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/zh/../assets/libs/jquery.min.js"></script>
+    <script src="/zh/../assets/libs/jquery-ui.min.js"></script>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/zh/../assets/libs/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Typeahead for Vortaro -->
+    <script src="/zh/../assets/libs/typeahead.bundle.min.js"></script>
+
+    <script>if (window.module) module = window.module;</script> 
+
+    <script src="/zh/../assets/js/main.js"></script>
+    <script src="/zh/js/vortlisto.js"></script>
+    <script src="/zh/../assets/js/vortaro.js"></script>
+
+  </body>
+</html>

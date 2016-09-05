@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+	3. En kafejo
+	|
+	Paraules noves
+	|
+  L'esperanto en  12 dies
+		</title>
+
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/ca/../assets/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">  
+    <!--
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    -->
+    <link href="/ca/../assets/css/main.css" rel="stylesheet">
+    <link href="/ca/../assets/css/vortaro.css" rel="stylesheet">
+
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-75833502-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/ca/"><img id="logo" src="/ca/../assets/img/stelo.png" alt="Verda stelo"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Lliçons
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/ca/01">1. Amiko Marko</a></li>
+                <li><a href="/ca/02">2. La amikino de Marko</a></li>
+                <li><a href="/ca/03">3. En kafejo</a></li>
+                <li><a href="/ca/04">4. Miaj leteroj</a></li>
+                <li><a href="/ca/05">5. Nova aŭto</a></li>
+                <li><a href="/ca/06">6. Maja</a></li>
+                <li><a href="/ca/07">7. Ĉiam malfrue</a></li>
+                <li><a href="/ca/08">8. Malbela tago</a></li>
+                <li><a href="/ca/09">9. Planoj pri veturado</a></li>
+                <li><a href="/ca/10">10. Familianoj kunvenas</a></li>
+                <li><a href="/ca/11">11. La sentimulo</a></li>
+                <li><a href="/ca/12">12. Nokta promeno</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Apèndix
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/ca/tabelvortoj">
+                  Correlatius
+                </a></li>
+                <li><a href="/ca/prepozicioj">
+                  Preposicions
+                </a></li>
+                <li><a href="/ca/konjunkcioj">
+                  Conjuncions
+                </a></li>
+                <li><a href="/ca/afiksoj">
+                  Afixos
+                </a></li>
+                <li><a href="/ca/diversajxoj">
+                  Miscelània
+                </a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-left">
+  <input id="vortaro" class="typeahead form-control" type="text" placeholder="Diccionari">          </form>
+
+          <form class="navbar-form navbar-left">
+            <select id="lingvoelektilo" class="form-control">
+                <option value="ca"
+  
+                  selected
+  
+                >Català</option>
+                <option value="de"
+  
+                >Deutsch</option>
+                <option value="en"
+  
+                >English</option>
+                <option value="fr"
+  
+                >Français</option>
+                <option value="es"
+  
+                >Español</option>
+                <option value="ms"
+  
+                >Bahasa Melayu</option>
+                <option value="pt"
+  
+                >Português</option>
+                <option value="th"
+  
+                >ภาษาไทย</option>
+                <option value="tr"
+  
+                >Türkçe (beta)</option>
+                <option value="uk"
+  
+                >Українська</option>
+                <option value="zh"
+  
+                >中文</option>
+                <option value="ar"
+  
+                >(test: araba)</option>
+                <option value="cs"
+  
+                >(test: ĉeĥa)</option>
+                <option value="fa"
+  
+                >(test: persa)</option>
+                <option value="frp"
+  
+                >(test: arpitana)</option>
+                <option value="hr"
+  
+                >(test: kroata)</option>
+                <option value="id"
+  
+                >(test: indonezia)</option>
+                <option value="km"
+  
+                >(test: kmera)</option>
+                <option value="nl"
+  
+                >(test: nederlanda)</option>
+                <option value="ru"
+  
+                >(test: rusa)</option>
+                <option value="sv"
+  
+                >(test: sveda)</option>
+                <option value="ur"
+  
+                >(test: urdua)</option>
+                <option value="my"
+  
+                >(test: birma)</option>
+                <option value="lo"
+  
+                >(test: laosa)</option>
+                <option value="hu"
+  
+                >(test: hungara)</option>
+            </select>
+          </form>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>   
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12">
+          
+
+<ul class="pager">
+<li class="previous"><a href="/ca/03/">endarrere</a></li> 
+<li class="next"><a href="/ca/03/gramatiko/">endavant</a></li> 
+</ul>
+  <h2 id="leciono3">
+    3.
+<a href="javascript:" data-toggle="popover" title="
+ 
+a, en  " data-content="
+    <table>
+ 
+    </table>
+  "
+  >En</a> 
+<a href="javascript:" data-toggle="popover" title="
+ 
+cafeteria  " data-content="
+    <table>
+<tr>
+          <td><em>kaf</em></td>
+          <td>
+ 
+cafè          </td>
+        </tr><tr>
+          <td><em>ej</em></td>
+          <td>
+ 
+lloc          </td>
+        </tr><tr>
+          <td><em>o</em></td>
+          <td>
+ 
+substantiu          </td>
+        </tr> 
+    </table>
+  "
+  >kafejo</a>  </h2>
+
+<ul class="nav nav-tabs">
+    <li 
+      role="presentation"
+    >
+    <a href="/ca/03/">Text</a>
+    </li>
+    <li 
+ 
+        class="active"
+      role="presentation"
+    >
+    <a href="/ca/03/vortoj/">Paraules noves</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/ca/03/gramatiko/">Gramàtica</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/ca/03/ekzerco1/">Exercici 1</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/ca/03/ekzerco2/">Exercici 2</a>
+    </li>
+    <li 
+      role="presentation"
+    >
+    <a href="/ca/03/ekzerco3/">Exercici 3</a>
+    </li>
+</ul>
+	<ul>
+<li>
+					<em>long</em> 
+ 
+				– 
+llarg/a (distància o temps)			</li>
+<li>
+					<em>e</em> 
+ 
+				– 
+adverbi			</li>
+<li>
+					<em>antaŭ</em> 
+ 
+				– 
+davant, abans de, davant de			</li>
+<li>
+					<em>ej</em> 
+ 
+				– 
+lloc			</li>
+<li>
+					<em>post</em> 
+ 
+				– 
+després de			</li>
+<li>
+					<em>ĝoj</em> 
+ 
+				– 
+content/a, feliç			</li>
+<li>
+					<em>tra</em> 
+ 
+				– 
+a través			</li>
+<li>
+					<em>strat</em> 
+ 
+				– 
+carrer			</li>
+<li>
+					<em>tag</em> 
+ 
+				– 
+dia			</li>
+<li>
+					<em>kuk</em> 
+ 
+				– 
+pastís			</li>
+<li>
+					<em>ni</em> 
+ 
+				– 
+nosaltres			</li>
+<li>
+					<em>manĝ</em> 
+ 
+				– 
+menjar			</li>
+<li>
+					<em>dir</em> 
+ 
+				– 
+dir			</li>
+<li>
+					<em>sufiĉ</em> 
+ 
+				– 
+suficient, bastant			</li>
+<li>
+					<em>mon</em> 
+ 
+				– 
+diners			</li>
+<li>
+					<em>kompren</em> 
+ 
+				– 
+entendre			</li>
+<li>
+					<em>ebl</em> 
+ 
+				– 
+possibilitat			</li>
+<li>
+					<em>cent</em> 
+ 
+				– 
+cent			</li>
+<li>
+					<em>dolar</em> 
+ 
+				– 
+dòlar			</li>
+<li>
+					<em>ho</em> 
+ 
+				– 
+ho			</li>
+<li>
+					<em>riĉ</em> 
+ 
+				– 
+ric/a			</li>
+<li>
+					<em>kelner</em> 
+ 
+				– 
+cambrer/a			</li>
+<li>
+					<em>port</em> 
+ 
+				– 
+portar			</li>
+<li>
+					<em>mult</em> 
+ 
+				– 
+molt/a			</li>
+<li>
+					<em>nov</em> 
+ 
+				– 
+nou/nova			</li>
+<li>
+					<em>serĉ</em> 
+ 
+				– 
+buscar, cercar			</li>
+<li>
+					<em>unu</em> 
+ 
+				– 
+u/un/una			</li>
+<li>
+					<em>lok</em> 
+ 
+				– 
+lloc			</li>
+<li>
+					<em>ali</em> 
+ 
+				– 
+altre/a			</li>
+<li>
+					<em>vizaĝ</em> 
+ 
+				– 
+cara			</li>
+<li>
+					<em>fin</em> 
+ 
+				– 
+acabar			</li>
+<li>
+					<em>per</em> 
+ 
+				– 
+per mitjà de, amb			</li>
+<li>
+					<em>fort</em> 
+ 
+				– 
+fort/a			</li>
+<li>
+					<em>voĉ</em> 
+ 
+				– 
+veu			</li>
+<li>
+					<em>okaz</em> 
+ 
+				– 
+succeir, passar, tenir lloc			</li>
+<li>
+					<em>sci</em> 
+ 
+				– 
+saber			</li>
+	</ul>
+	
+<ul class="pager">
+<li class="previous"><a href="/ca/03/">endarrere</a></li> 
+<li class="next"><a href="/ca/03/gramatiko/">endavant</a></li> 
+</ul>
+        
+        </div>
+      </div>
+
+			<div class="footer well well-sm">
+				<div>
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo#permesiloj">
+				    <img id="cc" src="/ca/../assets/img/cc.png" alt="Creative commons">
+					</a> 
+					
+					Surbaze de la <a href="https://eo.wikipedia.org/wiki/Zagreba_metodo">Zagreba metodo</a>, 
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo/blob/master/AUTHORS.md">Aŭtoroj</a>,
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo/tree/master/enhavo/tradukenda">Aldonu lingvon</a>,
+					<a href="mailto:georg@jaehnig.org">Kontakto</a>
+			</div>
+
+    </div>
+
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/ca/../assets/libs/jquery.min.js"></script>
+    <script src="/ca/../assets/libs/jquery-ui.min.js"></script>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/ca/../assets/libs/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Typeahead for Vortaro -->
+    <script src="/ca/../assets/libs/typeahead.bundle.min.js"></script>
+
+    <script>if (window.module) module = window.module;</script> 
+
+    <script src="/ca/../assets/js/main.js"></script>
+    <script src="/ca/js/vortlisto.js"></script>
+    <script src="/ca/../assets/js/vortaro.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <title>Esperanto in 12 days</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <style type="text/css">
+            body {text-align: center;font-family: Arial;background-color: #eee}
+        </style>
+    </head>
+    <body onload="onLoad()">
+
+        <div class="banner">
+        <br>
+        <br>
+        <br>
+        
+        <h1> Esperanto in 12 days </h1>
+        
+        <br>
+        <p> Zagreba metodo </p>
+        <p id="loading"><img src="webserver/img/gears.gif" alt="loading..." height="50" width="50"></p>
+    </div>
+
+    <script>
+    var httpd = null;
+    var homeUrl="http://localhost:8080/"
+
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+    function onDeviceReady() {
+        window.open = cordova.InAppBrowser.open;
+        httpd = ( cordova && cordova.plugins && cordova.plugins.CorHttpd ) ? cordova.plugins.CorHttpd : null;
+        startServer("webserver");
+    }
+
+    function startServer( wwwroot ) {
+        if ( httpd ) {
+            httpd.getURL(function(url){
+                if(! url.length > 0) {
+                    httpd.startServer({
+                        'www_root' : wwwroot,
+                        'port' : 8080,
+                    }, function( url ){
+                        openInAppBrowser();
+                    }, function( error ){
+                        navigator.notification.alert("Error failed to start the webserver")
+                    });
+                }else openInAppBrowser();
+                
+            },function(){});
+        } else {
+            navigator.notification.alert('CorHttpd plugin not available/ready.');
+        }
+    }
+
+    
+    function openInAppBrowser(){
+        var ref=cordova.InAppBrowser.open(getUrl(), '_self ', 'location=no,hidden=yes');   
+
+        ref.addEventListener('loadstop', function(event){
+            if(event.url.match(/http:\/\/localhost:8080\/*./)) saveUrl(event.url);
+            navigator.notification.activityStop();
+            ref.show();
+        });
+
+        ref.addEventListener('loadstart', function(obj){
+            navigator.notification.activityStart("Please wait", "Loading...");
+        });
+
+        ref.addEventListener('loaderror', function(){
+            navigator.notification.alert("Sorry, an Error occured");
+            navigator.notification.activityStop();
+        });       
+
+        ref.addEventListener('exit', function(){
+            saveUrl(getUrl());
+            openInAppBrowser();
+        });   
+    }
+
+
+    function getUrl(){
+        var url =  window.localStorage.getItem("learn.esperanto.com");
+        if(!url) url = homeUrl;
+        return url;
+    }
+
+    function saveUrl(url){
+        window.localStorage.setItem("learn.esperanto.com",url);
+    }
+
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zagreba Metodo</title>
+    
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="cordova.js"></script>
+    <script>
+        function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+        function onDeviceReady() {
+            checkConnection();
+            httpd = ( cordova && cordova.plugins && cordova.plugins.CorHttpd ) ? cordova.plugins.CorHttpd : null;
+
+            startServer("miniserver");
+            navigator.splashscreen.hide();
+        }
+
+
+        function startServer( wwwroot ) {
+        if ( httpd ) {
+            httpd.getURL(function(url){
+                if(url.length = 0) {
+                    httpd.startServer({
+                        'www_root' : wwwroot,
+                        'port' : 8080
+                    }, function( url ){
+                        checkConnection();
+                    }, function( error ){
+                        alert('Error');
+                    });
+                }
+                
+            },function(){});
+        } else {
+            alert('CorHttpd plugin not available/ready.');
+        }
+    }
+        
+        function checkConnection(){
+            if(navigator.network.connection.type == Connection.NONE){
+                document.getElementById("noconn").style.display = "block";
+                document.getElementById("loading").style.display = "none";
+            } else {
+                // change this URL to your web app URL
+                // make sure the web app is developed with all navigation and does not jump to external websites
+                
+                //*********************************//
+                
+                var url = "localhost:8080";
+                
+                //*********************************//
+                
+                openInAppBrowser(url);    
+            }            
+        }
+        
+        function retryConnection(){
+            document.getElementById("noconn").style.display = "none";
+            document.getElementById("loading").style.display = "block";
+            // adding delay for UX
+            setTimeout(function(){
+                checkConnection();
+            }, 500);    
+        }
+        
+        function openInAppBrowser(url){
+            var iab = window.open(url, '_self ', 'location=yes');
+            iab.addEventListener('loadstop', function(){
+                iab.show();
+            });
+            
+            iab.addEventListener('loadstart', function(obj){
+                if(navigator.network.connection.type == Connection.NONE){
+                    navigator.notification.alert("Internet connection was not detected, check your connection and retry", null, "No Internet");   
+                }
+            });
+            iab.addEventListener('loaderror', function(){
+                document.getElementById("noconn").style.display = "block";
+                document.getElementById("loading").style.display = "none";
+            });            
+        }
+    </script>
+    <style>
+        body {text-align: center;font-family: Arial;background-color: #eee}
+        #noconn {display:none}
+        body {background-color: #318079}
+        .button {display:inline;padding:20px;border:1px solid #777;background-color: #ddd; border-radius: 5px}
+
+    </style>    
+</head>
+<body onload="onLoad()">
+    <div class="banner">
+        <br>
+        <br>
+        <br>
+        
+        <!-- Add your app logo or text -->
+        
+        <img src="img/logo.png" alt="logo" height="170" width="200">
+        
+        <!-- ------------------------- -->
+        
+        <br>
+        <p id="loading"><img src="img/spinner.gif" alt="loading..." height="76" width="76"></p>
+        <div id="noconn">
+            <p>No Internet Connection</p>
+            <br>
+            <p><div class="button" onclick="retryConnection()">Retry</div></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.esperanto.learn" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CorHttpd">
+        <param name="android-package" value="com.rjfun.cordova.httpd.CorHttpd" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <name>Esperanto in 12 days</name>
+    <description>
+        La kurso de Esperanto laŭ la Zagreba Metodo 
+    </description>
+    <author email="benham.developer@outlook.com" href="http://learn.esperanto.com">
+        benahm
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="http://localhost:8080/*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon density="ldpi" src="assets/ldpi.png" />
+    <icon density="mdpi" src="assets/mdpi.png" />
+    <icon density="hdpi" src="assets/hdpi.png" />
+    <icon density="xhdpi" src="assets/xhdpi.png" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>

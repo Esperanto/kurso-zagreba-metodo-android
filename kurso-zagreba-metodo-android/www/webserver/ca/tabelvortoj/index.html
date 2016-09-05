@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+	Correlatius
+	|
+  L'esperanto en  12 dies
+		</title>
+
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/ca/../assets/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">  
+    <!--
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    -->
+    <link href="/ca/../assets/css/main.css" rel="stylesheet">
+    <link href="/ca/../assets/css/vortaro.css" rel="stylesheet">
+
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-75833502-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/ca/"><img id="logo" src="/ca/../assets/img/stelo.png" alt="Verda stelo"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Lliçons
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/ca/01">1. Amiko Marko</a></li>
+                <li><a href="/ca/02">2. La amikino de Marko</a></li>
+                <li><a href="/ca/03">3. En kafejo</a></li>
+                <li><a href="/ca/04">4. Miaj leteroj</a></li>
+                <li><a href="/ca/05">5. Nova aŭto</a></li>
+                <li><a href="/ca/06">6. Maja</a></li>
+                <li><a href="/ca/07">7. Ĉiam malfrue</a></li>
+                <li><a href="/ca/08">8. Malbela tago</a></li>
+                <li><a href="/ca/09">9. Planoj pri veturado</a></li>
+                <li><a href="/ca/10">10. Familianoj kunvenas</a></li>
+                <li><a href="/ca/11">11. La sentimulo</a></li>
+                <li><a href="/ca/12">12. Nokta promeno</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Apèndix
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/ca/tabelvortoj">
+                  Correlatius
+                </a></li>
+                <li><a href="/ca/prepozicioj">
+                  Preposicions
+                </a></li>
+                <li><a href="/ca/konjunkcioj">
+                  Conjuncions
+                </a></li>
+                <li><a href="/ca/afiksoj">
+                  Afixos
+                </a></li>
+                <li><a href="/ca/diversajxoj">
+                  Miscelània
+                </a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-left">
+  <input id="vortaro" class="typeahead form-control" type="text" placeholder="Diccionari">          </form>
+
+          <form class="navbar-form navbar-left">
+            <select id="lingvoelektilo" class="form-control">
+                <option value="ca"
+  
+                  selected
+  
+                >Català</option>
+                <option value="de"
+  
+                >Deutsch</option>
+                <option value="en"
+  
+                >English</option>
+                <option value="fr"
+  
+                >Français</option>
+                <option value="es"
+  
+                >Español</option>
+                <option value="ms"
+  
+                >Bahasa Melayu</option>
+                <option value="pt"
+  
+                >Português</option>
+                <option value="th"
+  
+                >ภาษาไทย</option>
+                <option value="tr"
+  
+                >Türkçe (beta)</option>
+                <option value="uk"
+  
+                >Українська</option>
+                <option value="zh"
+  
+                >中文</option>
+                <option value="ar"
+  
+                >(test: araba)</option>
+                <option value="cs"
+  
+                >(test: ĉeĥa)</option>
+                <option value="fa"
+  
+                >(test: persa)</option>
+                <option value="frp"
+  
+                >(test: arpitana)</option>
+                <option value="hr"
+  
+                >(test: kroata)</option>
+                <option value="id"
+  
+                >(test: indonezia)</option>
+                <option value="km"
+  
+                >(test: kmera)</option>
+                <option value="nl"
+  
+                >(test: nederlanda)</option>
+                <option value="ru"
+  
+                >(test: rusa)</option>
+                <option value="sv"
+  
+                >(test: sveda)</option>
+                <option value="ur"
+  
+                >(test: urdua)</option>
+                <option value="my"
+  
+                >(test: birma)</option>
+                <option value="lo"
+  
+                >(test: laosa)</option>
+                <option value="hu"
+  
+                >(test: hungara)</option>
+            </select>
+          </form>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>   
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12">
+          
+
+<h2>
+	Correlatius
+</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+			<th>&nbsp;</th>
+			<th>
+				<em>ki-</em>
+				<br/>
+pregunta			</th>
+			<th>
+				<em>ti-</em>
+				<br/>
+indicació			</th>
+			<th>
+				<em>i-</em>
+				<br/>
+indefinit			</th>
+			<th>
+				<em>ĉi-</em>
+				<br/>
+universal			</th>
+			<th>
+				<em>neni-</em>
+				<br/>
+negatiu			</th>
+    </tr>
+  </thead>
+  <tbody>
+			<tr>
+				<th>
+					<em>-o</em>
+					<br/>
+cosa				</th>
+					<td>
+						<em>kio</em> –<br/>
+què					</td>
+					<td>
+						<em>tio</em> –<br/>
+allò					</td>
+					<td>
+						<em>io</em> –<br/>
+alguna cosa					</td>
+					<td>
+						<em>ĉio</em> –<br/>
+tot					</td>
+					<td>
+						<em>nenio</em> –<br/>
+res, no res					</td>
+			</tr>
+			<tr>
+				<th>
+					<em>-u</em>
+					<br/>
+individu				</th>
+					<td>
+						<em>kiu</em> –<br/>
+quí, qual					</td>
+					<td>
+						<em>tiu</em> –<br/>
+aquell, aquella					</td>
+					<td>
+						<em>iu</em> –<br/>
+algú					</td>
+					<td>
+						<em>ĉiu</em> –<br/>
+cada un, cadascú, tots					</td>
+					<td>
+						<em>neniu</em> –<br/>
+ningú, cap (negació d'existència)					</td>
+			</tr>
+			<tr>
+				<th>
+					<em>-am</em>
+					<br/>
+temps				</th>
+					<td>
+						<em>kiam</em> –<br/>
+quan					</td>
+					<td>
+						<em>tiam</em> –<br/>
+llavors, en aquell moment					</td>
+					<td>
+						<em>iam</em> –<br/>
+en algún moment					</td>
+					<td>
+						<em>ĉiam</em> –<br/>
+sempre					</td>
+					<td>
+						<em>neniam</em> –<br/>
+mai					</td>
+			</tr>
+			<tr>
+				<th>
+					<em>-a</em>
+					<br/>
+qualitat				</th>
+					<td>
+						<em>kia</em> –<br/>
+com (sentit adjectiu, no adverbial), quin tipus de					</td>
+					<td>
+						<em>tia</em> –<br/>
+tal, així (sentit adjectiu, no adverbial)					</td>
+					<td>
+						<em>ia</em> –<br/>
+algún tipus de					</td>
+					<td>
+						<em>ĉia</em> –<br/>
+de tots els tipus, de totes les classes					</td>
+					<td>
+						<em>nenia</em> –<br/>
+de cap tipus, de cap classe					</td>
+			</tr>
+			<tr>
+				<th>
+					<em>-e</em>
+					<br/>
+lloc				</th>
+					<td>
+						<em>kie</em> –<br/>
+on					</td>
+					<td>
+						<em>tie</em> –<br/>
+allà					</td>
+					<td>
+						<em>ie</em> –<br/>
+en algún lloc					</td>
+					<td>
+						<em>ĉie</em> –<br/>
+a tot arreu					</td>
+					<td>
+						<em>nenie</em> –<br/>
+enlloc, a cap lloc					</td>
+			</tr>
+			<tr>
+				<th>
+					<em>-el</em>
+					<br/>
+manera				</th>
+					<td>
+						<em>kiel</em> –<br/>
+com (sentit adverbial)					</td>
+					<td>
+						<em>tiel</em> –<br/>
+així, d'aquesta manera					</td>
+					<td>
+						<em>iel</em> –<br/>
+d'alguna manera					</td>
+					<td>
+						<em>ĉiel</em> –<br/>
+de totes les maneres					</td>
+					<td>
+						<em>neniel</em> –<br/>
+de cap manera					</td>
+			</tr>
+			<tr>
+				<th>
+					<em>-om</em>
+					<br/>
+quantitat				</th>
+					<td>
+						<em>kiom</em> –<br/>
+quant					</td>
+					<td>
+						<em>tiom</em> –<br/>
+tant					</td>
+					<td>
+						<em>iom</em> –<br/>
+una mica, una certa quantitat					</td>
+					<td>
+						<em>ĉiom</em> –<br/>
+tot (quantitat absoluta)					</td>
+					<td>
+						<em>neniom</em> –<br/>
+gens, cap quantitat,					</td>
+			</tr>
+			<tr>
+				<th>
+					<em>-al</em>
+					<br/>
+raó				</th>
+					<td>
+						<em>kial</em> –<br/>
+per què					</td>
+					<td>
+						<em>tial</em> –<br/>
+per tal raó, per tal motiu					</td>
+					<td>
+						<em>ial</em> –<br/>
+per alguna raó, per algún motiu					</td>
+					<td>
+						<em>ĉial</em> –<br/>
+per qualsevol raó, per qualsevol motiu					</td>
+					<td>
+						<em>nenial</em> –<br/>
+per cap raó, per cap motiu					</td>
+			</tr>
+			<tr>
+				<th>
+					<em>-es</em>
+					<br/>
+possesió				</th>
+					<td>
+						<em>kies</em> –<br/>
+de quí					</td>
+					<td>
+						<em>ties</em> –<br/>
+d'aquell					</td>
+					<td>
+						<em>ies</em> –<br/>
+d'algú					</td>
+					<td>
+						<em>ĉies</em> –<br/>
+de tots					</td>
+					<td>
+						<em>nenies</em> –<br/>
+de ningú					</td>
+			</tr>
+  </tbody>
+</table>
+
+        
+        </div>
+      </div>
+
+			<div class="footer well well-sm">
+				<div>
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo#permesiloj">
+				    <img id="cc" src="/ca/../assets/img/cc.png" alt="Creative commons">
+					</a> 
+					
+					Surbaze de la <a href="https://eo.wikipedia.org/wiki/Zagreba_metodo">Zagreba metodo</a>, 
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo/blob/master/AUTHORS.md">Aŭtoroj</a>,
+					<a href="https://github.com/Esperanto/kurso-zagreba-metodo/tree/master/enhavo/tradukenda">Aldonu lingvon</a>,
+					<a href="mailto:georg@jaehnig.org">Kontakto</a>
+			</div>
+
+    </div>
+
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/ca/../assets/libs/jquery.min.js"></script>
+    <script src="/ca/../assets/libs/jquery-ui.min.js"></script>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/ca/../assets/libs/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Typeahead for Vortaro -->
+    <script src="/ca/../assets/libs/typeahead.bundle.min.js"></script>
+
+    <script>if (window.module) module = window.module;</script> 
+
+    <script src="/ca/../assets/js/main.js"></script>
+    <script src="/ca/js/vortlisto.js"></script>
+    <script src="/ca/../assets/js/vortaro.js"></script>
+
+  </body>
+</html>
