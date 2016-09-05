@@ -10,7 +10,7 @@ kurso-zagreba-metodo web app is packaged as Android app
 
 # Build With
 - [Apache cordova](https://cordova.apache.org/)
-- Apache cordova plugins : 
+- Apache cordova plugins
   - [inappbrowser](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/)
   - [whitelist](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/)
   - [dialogs](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-dialogs/)
