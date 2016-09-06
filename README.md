@@ -12,6 +12,8 @@
 - [APK](https://github.com/Esperanto/kurso-zagreba-metodo-android/releases/download/1.0.3/android-release-signed.apk)
 
 --
+--
+
 # Description in English
 ## kurso-zagreba-metodo for Android
 kurso-zagreba-metodo web app is packaged as Android app
